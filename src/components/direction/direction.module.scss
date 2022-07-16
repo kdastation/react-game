@@ -1,0 +1,18 @@
+.direction {
+  width: 60px;
+  height: 60px;
+  background-color: cornflowerblue;
+  position: relative;
+  &__image {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (max-width: 450px) {
+    width: 35px;
+    height: 35px;
+  }
+}

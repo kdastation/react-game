@@ -1,0 +1,32 @@
+.cell {
+  min-height: 170px;
+  background-color: darkmagenta;
+  outline: 1px solid black;
+  transition: background-color 0.3s;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  &__smile {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__sad {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  &__start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover {
+    background-color: darken(darkmagenta, 7);
+  }
+
+  @media (max-width: 450px) {
+    min-height: 90px;
+  }
+}
